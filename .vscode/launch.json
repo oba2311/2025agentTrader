@@ -34,9 +34,9 @@
 		},
 		{
 			"type": "chrome",
-			"name": "5174 Attach Chrome",
+			"name": "5175 Attach Chrome",
 			"request": "attach",
-			"url": "http://localhost:5174",
+			"url": "http://localhost:5175",
 			"webRoot": "${workspaceFolder}"
 		}
 	]
