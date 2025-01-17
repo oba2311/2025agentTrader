@@ -70,7 +70,7 @@ const StockChart = () => {
 				<ResponsiveContainer>
 					<LineChart
 						data={data}
-						margin={{ right: 16, left: -0, top: 5, bottom: 10 }}
+						margin={{ right: 16, left: -0, top: 5, bottom: -80 }}
 					>
 						<CartesianGrid strokeDasharray="3 3" />
 						<XAxis

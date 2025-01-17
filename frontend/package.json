@@ -15,6 +15,7 @@
 	"dependencies": {
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
+		"react-icons": "^5.4.0",
 		"recharts": "^2.10.3",
 		"scheduler": "^0.25.0"
 	},

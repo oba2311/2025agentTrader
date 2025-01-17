@@ -37,8 +37,24 @@ const SignUpForm: React.FC<SignUpFormProps> = ({ onSubmit }) => {
 				<h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-6 md:mb-8 text-center">
 					Get notified when your target price is met!
 				</h2>
+				<p className="text-md text-gray-900 text-center">
+					Everyone's got their own strategy.<br></br> The agent will notify you
+					when <strong>your</strong> stock is at your target price.
+				</p>
 
 				<div className="space-y-2">
+					<label className="block text-sm font-medium text-gray-700">
+						Your strategy
+					</label>
+					<textarea
+						id="strategy"
+						name="strategy"
+						value={formData.strategy}
+						onChange={handleChange}
+						rows={4}
+						className="w-full px-3 md:px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
+						placeholder="When exactly would you like to be notified?"
+					/>
 					<label
 						htmlFor="email"
 						className="block text-sm font-medium text-gray-700"
