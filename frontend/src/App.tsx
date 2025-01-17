@@ -1,4 +1,5 @@
 import StockChart from "./components/StockChart";
+import SignUpForm from "./components/SignUpForm";
 
 function App() {
 	return (
@@ -10,6 +11,7 @@ function App() {
 				backgroundColor: "#fff",
 			}}
 		>
+			<SignUpForm />
 			<StockChart />
 		</div>
 	);

@@ -5,7 +5,7 @@
 	"version": "0.2.0",
 	"configurations": [
 		{
-			"name": "Launch Chrome",
+			"name": "8080 Launch Chrome",
 			"request": "launch",
 			"type": "chrome",
 			"url": "http://localhost:8080",
@@ -14,15 +14,29 @@
 		{
 			"type": "chrome",
 			"request": "launch",
-			"name": "Launch Chrome",
+			"name": "5174 Launch Chrome",
 			"url": "http://localhost:5174",
 			"webRoot": "${workspaceFolder}"
 		},
 		{
 			"type": "chrome",
-			"name": "Launch Preview on Chrome",
+			"name": "4174 Launch Preview on Chrome",
 			"request": "launch",
 			"url": "http://localhost:4174",
+			"webRoot": "${workspaceFolder}"
+		},
+		{
+			"type": "chrome",
+			"name": "4174 Attach Preview on Chrome",
+			"request": "attach",
+			"url": "http://localhost:4174",
+			"webRoot": "${workspaceFolder}"
+		},
+		{
+			"type": "chrome",
+			"name": "5174 Attach Chrome",
+			"request": "attach",
+			"url": "http://localhost:5174",
 			"webRoot": "${workspaceFolder}"
 		}
 	]
