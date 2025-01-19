@@ -18,13 +18,15 @@ An intelligent trading assistant that helps you monitor stocks and execute tradi
 - Python 3.8+
 - pip
 - TA-Lib
+- Node.js 16+ (for frontend)
+- npm or yarn
 
 ### Installation
 
 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/2025agentTrader.git
+git clone https://github.com/oba2311/2025agentTrader.git
 cd 2025agentTrader
 ```
 
@@ -50,13 +52,20 @@ sudo make install
 Windows:
 Download and install from: https://www.lfd.uci.edu/~gohlke/pythonlibs/#ta-lib
 
-3. Install Python dependencies
+3. Install backend dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-4. Set up environment variables
+4. Install frontend dependencies
+
+```bash
+cd frontend
+npm install
+```
+
+5. Set up environment variables
 
 ```bash
 cp .env.example .env
@@ -105,16 +114,15 @@ strategy = {
 }
 ```
 
-## 🛠️ Architecture
+## 🛠️ Project Structure
 
-```mermaid
-graph LR
-    A((User Input)) --> B[LangChain Agent]
-    B --> C[Strategy Inference]
-    C --> D{User Confirmation}
-    D -->|Rejected| B
-    D -->|Approved| E[Code Generation]
-    E --> F((Email Alert System))
+```
+2025agentTrader/
+├── agents/          # Trading agent implementation
+├── frontend/        # React frontend application
+├── scripts/        # Data collection and utility scripts
+├── data/           # Stock data storage
+└── Docs/           # Project documentation
 ```
 
 ## 📚 Documentation
