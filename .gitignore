@@ -28,6 +28,7 @@ venv/
 env/
 ENV/
 .venv/
+trading_env/
 
 # IDE specific files
 .idea/
